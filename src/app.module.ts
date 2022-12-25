@@ -5,7 +5,7 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost:27017/nest'), UsersModule],
+  imports: [MongooseModule.forRoot('mongodb://0.0.0.0:27017/nest'), UsersModule],
   controllers: [AppController],
   providers: [AppService],
 })
