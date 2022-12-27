@@ -10,10 +10,10 @@ export class User {
   name: string;
 
   @Prop({ required: true })
-  age: number;
+  isChecked: boolean;
 
   @Prop({ required: true })
-  email: string;
+  isDeleted: boolean;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
