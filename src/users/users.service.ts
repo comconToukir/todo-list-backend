@@ -16,7 +16,7 @@ export class UsersService {
   
 
   async findAll(): Promise <User[]> {
-    return await this.userModel.find();
+    return await this.userModel.find({ isDeleted: false });
   }
 
   findOne(id: number) {
